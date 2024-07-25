@@ -2,9 +2,9 @@ package com.dolap.quarkus.ddd.infrastructure.rest;
 
 import com.dolap.quarkus.ddd.application.member.message.request.CreateMemberRequest;
 import com.dolap.quarkus.ddd.application.member.message.request.UpdateMemberRequest;
-import com.dolap.quarkus.ddd.domain.member.entity.Member;
-import com.dolap.quarkus.ddd.domain.member.repository.MemberRepository;
-import com.dolap.quarkus.ddd.domain.member.vo.PhoneNumber;
+import com.rodrigof.ddd.domain.member.entity.Member;
+import com.rodrigof.ddd.domain.member.repository.MemberRepository;
+import com.rodrigof.ddd.domain.member.vo.PhoneNumber;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

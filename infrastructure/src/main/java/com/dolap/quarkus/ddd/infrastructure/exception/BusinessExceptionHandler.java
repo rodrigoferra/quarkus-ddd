@@ -1,6 +1,6 @@
 package com.dolap.quarkus.ddd.infrastructure.exception;
 
-import com.dolap.quarkus.ddd.domain.member.exception.BusinessException;
+import com.rodrigof.ddd.domain.member.exception.BusinessException;
 import com.dolap.quarkus.ddd.infrastructure.configuration.MessagePropertyReader;
 
 import javax.inject.Inject;

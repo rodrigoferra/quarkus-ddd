@@ -1,4 +1,4 @@
-package com.dolap.quarkus.ddd.domain.member.vo;
+package com.rodrigof.ddd.domain.member.vo;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;

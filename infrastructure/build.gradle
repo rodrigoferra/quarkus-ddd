@@ -3,12 +3,12 @@ plugins {
 }
 
 ext {
-    quarkusPanacheVersion = "1.10.15.Final"
-    restAssuredVersion = "4.3.3"
+    quarkusPanacheVersion = "3.13.0"
+    restAssuredVersion = "5.5.0"
 }
 
 dependencies {
-    compile project(":application")
+    implementation project(":application")
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation "io.quarkus:quarkus-hibernate-orm-panache:${quarkusPanacheVersion}"
     implementation "io.quarkus:quarkus-flyway"
@@ -17,6 +17,6 @@ dependencies {
     implementation "io.quarkus:quarkus-jdbc-postgresql"
     implementation "io.quarkus:quarkus-arc"
     implementation "io.quarkus:quarkus-resteasy"
-    testCompile "io.quarkus:quarkus-junit5"
-    testCompile "io.rest-assured:rest-assured:${restAssuredVersion}"
+    testImplementation "io.quarkus:quarkus-junit5"
+    testImplementation "io.rest-assured:rest-assured:${restAssuredVersion}"
 }

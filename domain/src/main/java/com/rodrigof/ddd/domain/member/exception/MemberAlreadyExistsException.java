@@ -1,4 +1,4 @@
-package com.dolap.quarkus.ddd.domain.member.exception;
+package com.rodrigof.ddd.domain.member.exception;
 
 public class MemberAlreadyExistsException extends BusinessException {
 

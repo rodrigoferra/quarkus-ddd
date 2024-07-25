@@ -1,7 +1,7 @@
 package com.dolap.quarkus.ddd.infrastructure.repository;
 
-import com.dolap.quarkus.ddd.domain.member.entity.Member;
-import com.dolap.quarkus.ddd.domain.member.repository.MemberRepository;
+import com.rodrigof.ddd.domain.member.entity.Member;
+import com.rodrigof.ddd.domain.member.repository.MemberRepository;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
 import javax.enterprise.context.ApplicationScoped;

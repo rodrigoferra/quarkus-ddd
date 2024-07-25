@@ -1,7 +1,7 @@
-package com.dolap.quarkus.ddd.domain.member.service;
+package com.rodrigof.ddd.domain.member.service;
 
-import com.dolap.quarkus.ddd.domain.member.exception.MemberNotFoundException;
-import com.dolap.quarkus.ddd.domain.member.repository.MemberRepository;
+import com.rodrigof.ddd.domain.member.exception.MemberNotFoundException;
+import com.rodrigof.ddd.domain.member.repository.MemberRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

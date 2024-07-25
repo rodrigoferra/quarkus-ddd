@@ -1,8 +1,8 @@
 package com.dolap.quarkus.ddd.application.member.converter
 
 import com.dolap.quarkus.ddd.application.member.message.dto.MemberDTO
-import com.dolap.quarkus.ddd.domain.member.entity.Member
-import com.dolap.quarkus.ddd.domain.member.vo.PhoneNumber
+import com.rodrigof.ddd.domain.member.entity.Member
+import com.rodrigof.ddd.domain.member.vo.PhoneNumber
 import spock.lang.Specification
 
 class MemberToMemberDTOConverterSpec extends Specification {

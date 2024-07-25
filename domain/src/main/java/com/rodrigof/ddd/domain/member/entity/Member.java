@@ -1,6 +1,6 @@
-package com.dolap.quarkus.ddd.domain.member.entity;
+package com.rodrigof.ddd.domain.member.entity;
 
-import com.dolap.quarkus.ddd.domain.member.vo.PhoneNumber;
+import com.rodrigof.ddd.domain.member.vo.PhoneNumber;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;

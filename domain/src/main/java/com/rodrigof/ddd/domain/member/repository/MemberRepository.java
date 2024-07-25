@@ -1,6 +1,6 @@
-package com.dolap.quarkus.ddd.domain.member.repository;
+package com.rodrigof.ddd.domain.member.repository;
 
-import com.dolap.quarkus.ddd.domain.member.entity.Member;
+import com.rodrigof.ddd.domain.member.entity.Member;
 
 import java.util.List;
 import java.util.Optional;

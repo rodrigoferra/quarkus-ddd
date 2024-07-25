@@ -11,11 +11,11 @@ import com.dolap.quarkus.ddd.application.member.message.response.GetMembersRespo
 import com.dolap.quarkus.ddd.application.member.message.response.UpdateMemberResponse;
 import com.dolap.quarkus.ddd.application.member.validator.CreateMemberRequestValidator;
 import com.dolap.quarkus.ddd.application.member.validator.UpdateMemberRequestValidator;
-import com.dolap.quarkus.ddd.domain.member.entity.Member;
-import com.dolap.quarkus.ddd.domain.member.service.CreateMemberService;
-import com.dolap.quarkus.ddd.domain.member.service.DeleteMemberService;
-import com.dolap.quarkus.ddd.domain.member.service.GetMemberService;
-import com.dolap.quarkus.ddd.domain.member.service.UpdateMemberService;
+import com.rodrigof.ddd.domain.member.entity.Member;
+import com.rodrigof.ddd.domain.member.service.CreateMemberService;
+import com.rodrigof.ddd.domain.member.service.DeleteMemberService;
+import com.rodrigof.ddd.domain.member.service.GetMemberService;
+import com.rodrigof.ddd.domain.member.service.UpdateMemberService;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
