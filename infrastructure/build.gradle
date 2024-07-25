@@ -9,6 +9,7 @@ ext {
 
 dependencies {
     implementation project(":application")
+    implementation project(path: ':domain')
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation "io.quarkus:quarkus-hibernate-orm-panache:${quarkusPanacheVersion}"
     implementation "io.quarkus:quarkus-flyway"

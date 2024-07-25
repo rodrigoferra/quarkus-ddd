@@ -1,6 +1,8 @@
 package com.dolap.quarkus.ddd.infrastructure.configuration;
 
-import javax.inject.Singleton;
+
+import jakarta.inject.Singleton;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;

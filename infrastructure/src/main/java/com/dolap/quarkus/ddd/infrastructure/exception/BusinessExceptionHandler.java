@@ -1,13 +1,11 @@
 package com.dolap.quarkus.ddd.infrastructure.exception;
 
-import com.rodrigof.ddd.domain.member.exception.BusinessException;
 import com.dolap.quarkus.ddd.infrastructure.configuration.MessagePropertyReader;
-
-import javax.inject.Inject;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
-import javax.ws.rs.ext.ExceptionMapper;
-import javax.ws.rs.ext.Provider;
+import com.rodrigof.ddd.domain.member.exception.BusinessException;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.ext.ExceptionMapper;
+import jakarta.ws.rs.ext.Provider;
 
 @Provider
 public class BusinessExceptionHandler implements ExceptionMapper<BusinessException> {
@@ -19,7 +17,7 @@ public class BusinessExceptionHandler implements ExceptionMapper<BusinessExcepti
     public Response toResponse(BusinessException exception) {
         String errorMessage = messagePropertyReader.getMessage(exception.getMessageKey());
         ErrorResponse errorResponse = new ErrorResponse(errorMessage);
-        return Response.status(Status.BAD_REQUEST).entity(errorResponse).build();
+        return Response.status(Response.Status.BAD_REQUEST).entity(errorResponse).build();
     }
 
 }

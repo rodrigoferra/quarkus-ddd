@@ -4,10 +4,9 @@ import com.rodrigof.ddd.domain.member.entity.Member;
 import com.rodrigof.ddd.domain.member.exception.MemberNotFoundException;
 import com.rodrigof.ddd.domain.member.repository.MemberRepository;
 import com.rodrigof.ddd.domain.member.vo.PhoneNumber;
-
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.transaction.Transactional;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 
 @ApplicationScoped
 public class UpdateMemberService {

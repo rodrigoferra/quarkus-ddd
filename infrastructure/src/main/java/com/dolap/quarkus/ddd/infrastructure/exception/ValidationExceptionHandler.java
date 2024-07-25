@@ -2,12 +2,11 @@ package com.dolap.quarkus.ddd.infrastructure.exception;
 
 import com.dolap.quarkus.ddd.application.base.exception.ValidationException;
 import com.dolap.quarkus.ddd.infrastructure.configuration.MessagePropertyReader;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.ext.ExceptionMapper;
+import jakarta.ws.rs.ext.Provider;
 
-import javax.inject.Inject;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
-import javax.ws.rs.ext.ExceptionMapper;
-import javax.ws.rs.ext.Provider;
 
 @Provider
 public class ValidationExceptionHandler implements ExceptionMapper<ValidationException> {
@@ -19,7 +18,7 @@ public class ValidationExceptionHandler implements ExceptionMapper<ValidationExc
     public Response toResponse(ValidationException exception) {
         String errorMessage = messagePropertyReader.getMessage(exception.getMessageKey());
         ErrorResponse errorResponse = new ErrorResponse(errorMessage);
-        return Response.status(Status.BAD_REQUEST).entity(errorResponse).build();
+        return Response.status(Response.Status.BAD_REQUEST).entity(errorResponse).build();
     }
 
 }

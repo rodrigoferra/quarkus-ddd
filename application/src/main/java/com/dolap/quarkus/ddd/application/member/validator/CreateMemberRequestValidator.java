@@ -2,8 +2,7 @@ package com.dolap.quarkus.ddd.application.member.validator;
 
 import com.dolap.quarkus.ddd.application.base.validator.RequestValidator;
 import com.dolap.quarkus.ddd.application.member.message.request.CreateMemberRequest;
-
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class CreateMemberRequestValidator extends RequestValidator {

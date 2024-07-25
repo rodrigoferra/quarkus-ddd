@@ -3,10 +3,11 @@ package com.rodrigof.ddd.domain.member.service;
 import com.rodrigof.ddd.domain.member.entity.Member;
 import com.rodrigof.ddd.domain.member.exception.MemberNotFoundException;
 import com.rodrigof.ddd.domain.member.repository.MemberRepository;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import java.util.List;
+
 
 @ApplicationScoped
 public class GetMemberService {

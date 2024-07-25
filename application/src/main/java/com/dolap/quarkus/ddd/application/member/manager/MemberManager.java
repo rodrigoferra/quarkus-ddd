@@ -16,9 +16,9 @@ import com.rodrigof.ddd.domain.member.service.CreateMemberService;
 import com.rodrigof.ddd.domain.member.service.DeleteMemberService;
 import com.rodrigof.ddd.domain.member.service.GetMemberService;
 import com.rodrigof.ddd.domain.member.service.UpdateMemberService;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import java.util.List;
 
 @ApplicationScoped

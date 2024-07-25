@@ -4,9 +4,9 @@ import com.rodrigof.ddd.domain.member.entity.Member;
 import com.rodrigof.ddd.domain.member.exception.MemberAlreadyExistsException;
 import com.rodrigof.ddd.domain.member.repository.MemberRepository;
 import com.rodrigof.ddd.domain.member.vo.PhoneNumber;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 
 @ApplicationScoped
 public class CreateMemberService {
